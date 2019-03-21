@@ -1,13 +1,13 @@
 const express = require('express');
 const path = require('path');
-const logger = require('./middleware/logger');
+// const logger = require('./middleware/logger');
 
 const app = express();
 
 //Init middleware
 // app.use(logger);
 
-//Body PArser middleware
+//Body Parser middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
